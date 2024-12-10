@@ -7,7 +7,7 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_APIKEY });
 
 const app = express();
 const corsOptions = {
-  origin: ["http://localhost:8080", "http://localhost:5173"],
+  origin: ["https://youtube-ai-client.onrender.com"],
   method: ["GET", "POST"],
 };
 app.use(cors(corsOptions));
